@@ -60,6 +60,10 @@ o	Transformed numerical and categorical features
 
 o	Attempted Principal Component Analysis (PCA) to reduce dimensionality and explore potential feature combinations; however, the variance explained by the first principal components was found to be insignificant, so PCA was not used in the final analysis
 
+![WhatsApp Image 2025-04-21 at 14 01 50_c65b71ac](https://github.com/user-attachments/assets/01cca296-1af8-46d4-acf0-dd59ec421c3a)
+
+
+
 o	A comprehensive correlation heatmap revealed high correlations (e.g., sqft_living and bathrooms) and weak correlations (e.g., condition, was_renovated). This helped guide feature selection and engineering.
 
 3.	Modeling (Regression Stage):
@@ -94,6 +98,10 @@ o	Best-performing classification model (Random Forest) was tested with and witho
    
 #  Correlation Matrix:
 
+
+![WhatsApp Image 2025-04-21 at 14 02 26_c7476c44](https://github.com/user-attachments/assets/ea82f133-67d1-4ef3-8a14-d250230cff8e)
+
+
 o	Revealed strong correlations between features, e.g., sqft_living and bathrooms, and sqft_above
 
 o	sqft_living had a strong positive correlation with price
@@ -103,6 +111,10 @@ o	Weak or negative correlations were noted for condition and was_renovated
 o	The matrix was visualized with a heatmap for interpretability
 
 # Boxplot Analysis:
+
+![WhatsApp Image 2025-04-21 at 14 00 53_28e6448c](https://github.com/user-attachments/assets/e0c356b3-4b83-4950-888a-88a92aabfec0)
+
+
 	
 o	Revealed skewness and outliers in price
 
@@ -183,7 +195,11 @@ o	High: price > Q3
 
 ##  Classification Metrics (With Geolocation, Best Model)
 
-![classification_metrics_table](https://github.com/user-attachments/assets/c4114f57-b340-4f1d-91aa-4840186c8ba5)
+![WhatsApp Image 2025-04-21 at 14 18 04_ceda6a5e](https://github.com/user-attachments/assets/58f80c5a-53b3-4d3e-8f6b-a65f2909a422)
+
+![WhatsApp Image 2025-04-21 at 14 18 05_f6833d6c](https://github.com/user-attachments/assets/17c2e8b7-4ac6-43cf-97d3-efa9b962ca3b)
+
+
 
 
 ## Local Interpretability with LIME
@@ -209,6 +225,8 @@ o	num__bathrooms, num__sqft_lot, num__sqft_basement, num__sqft_living, etc.
 •	LIME provided a clear visualization of which features contributed to pushing the prediction away from Low toward High or Medium.
 
 This helped validate that the model's decision-making aligns with expected housing characteristics.
+
+
 
 
 
