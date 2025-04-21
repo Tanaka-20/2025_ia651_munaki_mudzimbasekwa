@@ -13,7 +13,7 @@ Exploratory Data Analysis (EDA) included correlation matrix visualizations, boxp
 •	Source: Kaggle
 •	Observations: Thousands of house records from the US
 
-##Features in the Dataset:
+## Features in the Dataset:
 
 •	price: Target variable representing sale price of the house
 
@@ -132,7 +132,7 @@ Q3: $659,125
 
 •	Optional: latitude, longitude
 
- #Target Variable
+ # Target Variable
 
 
   ![WhatsApp Image 2025-04-21 at 14 34 49_c8b79339](https://github.com/user-attachments/assets/007bfad5-e1c1-4923-beec-58e6b5eaae81)
@@ -209,7 +209,8 @@ o	High: price > Q3
 
 •	Improved fairness across classes
 
-## Random Forest With and Without Geolocation:
+##   Best Model With and Without Geolocation (Random Forest)
+
 
 •	Without Geolocation: Accuracy ≈ 84%
 
@@ -220,7 +221,7 @@ o	High: price > Q3
 ![WhatsApp Image 2025-04-21 at 14 39 53_b48cfbc6](https://github.com/user-attachments/assets/ec279ef0-5bdb-4081-84b8-d2bab9b835db)
 
 
-##  Classification Metrics (With Geolocation, Best Model)
+
 
 
 
