@@ -130,5 +130,16 @@ o	Medium: Q1 < price ≤ Q3
 
 o	High: price > Q3
 
+## Model Training & Evaluation
+
+#Models Used:
+
+•	Linear Regression
+
+•	Random Forest Regressor
+
+•	XGBoost Regressor
+
+
 
 
