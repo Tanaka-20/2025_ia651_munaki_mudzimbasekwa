@@ -1,3 +1,4 @@
 # 2025_ia651_munaki_mudzimbasekwa
 
-# munakite..
+# House Price Classification Project
+# Project Overview
