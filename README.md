@@ -133,7 +133,10 @@ Q3: $659,125
 •	Optional: latitude, longitude
 
  #Target Variable
-  
+
+
+  ![WhatsApp Image 2025-04-21 at 14 34 49_c8b79339](https://github.com/user-attachments/assets/007bfad5-e1c1-4923-beec-58e6b5eaae81)
+
 •	price_class: Categorical (Low, Medium, High)
 
 o	Low: price ≤ Q1
@@ -178,11 +181,22 @@ o	High: price > Q3
 
 ## Performance (Before SMOTE or Scaling):
 
+![WhatsApp Image 2025-04-21 at 14 33 51_8dc1b478](https://github.com/user-attachments/assets/723a364a-a93c-4b44-9bcc-e0f0e0e3affc)
+
 •	Random Forest: Accuracy ≈ 77%
+
+![WhatsApp Image 2025-04-21 at 14 33 31_17807eea](https://github.com/user-attachments/assets/37848a92-a059-4a46-b351-f7379e181736)
+
 
 •	XGBoost: Accuracy ≈ 75%
 
 ## After SMOTE + Scaling:
+
+
+![WhatsApp Image 2025-04-21 at 14 18 04_ceda6a5e](https://github.com/user-attachments/assets/58f80c5a-53b3-4d3e-8f6b-a65f2909a422)
+
+![WhatsApp Image 2025-04-21 at 14 18 05_f6833d6c](https://github.com/user-attachments/assets/17c2e8b7-4ac6-43cf-97d3-efa9b962ca3b)
+
 •	Models trained on balanced and normalized data
 
 •	Improved fairness across classes
@@ -194,10 +208,6 @@ o	High: price > Q3
 •	With Geolocation: Accuracy improved to ≈ 85%
 
 ##  Classification Metrics (With Geolocation, Best Model)
-
-![WhatsApp Image 2025-04-21 at 14 18 04_ceda6a5e](https://github.com/user-attachments/assets/58f80c5a-53b3-4d3e-8f6b-a65f2909a422)
-
-![WhatsApp Image 2025-04-21 at 14 18 05_f6833d6c](https://github.com/user-attachments/assets/17c2e8b7-4ac6-43cf-97d3-efa9b962ca3b)
 
 
 
