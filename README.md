@@ -206,6 +206,10 @@ o	High: price > Q3
 
 LIME (Local Interpretable Model-agnostic Explanations) was used to explain individual classification predictions made by the best-performing model (Random Forest).
 
+
+![WhatsApp Image 2025-04-21 at 14 24 23_7d458afb](https://github.com/user-attachments/assets/bb9fc0ce-9a62-45dd-adad-32bd011d41dd)
+
+
 •	Example Row (index 100) was analyzed:
 
 o	Predicted Class: High
