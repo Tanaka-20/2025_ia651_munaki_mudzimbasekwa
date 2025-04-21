@@ -132,7 +132,7 @@ o	High: price > Q3
 
 ## Model Training & Evaluation
 
-#Models Used:
+# Models Used:
 
 •	Linear Regression
 
