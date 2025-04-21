@@ -49,3 +49,45 @@ Exploratory Data Analysis (EDA) included correlation matrix visualizations, boxp
 
 Engineered features like effective_year and was_renovated were included to improve the predictive power and interpretability of renovation data. Geolocation features (latitude and longitude) were evaluated separately to assess spatial influence on pricing.
 
+## Process Overview
+1.	Data Cleaning: Handling missing values and dropping irrelevant columns (e.g., date, street, etc.)
+   
+2.	Feature Engineering:
+   
+o	Created price_class using quartiles (Q1, Q2, Q3) obtained from the boxplot
+
+o	Transformed numerical and categorical features
+
+o	Attempted Principal Component Analysis (PCA) to reduce dimensionality and explore potential feature combinations; however, the variance explained by the first principal components was found to be insignificant, so PCA was not used in the final analysis
+
+o	A comprehensive correlation heatmap revealed high correlations (e.g., sqft_living and bathrooms) and weak correlations (e.g., condition, was_renovated). This helped guide feature selection and engineering.
+
+3.	Modeling (Regression Stage):
+   
+o	Models were initially trained to predict house price as a continuous variable before converting to classification
+
+o	Trained Linear Regression, Random Forest Regressor, and XGBoost Regressor
+
+o	Each model was trained with and without geolocation features (latitude, longitude)
+
+o	Performance was evaluated using RMSE and R² Score
+
+o	Best overall performance was achieved by Linear Regression with geolocation
+
+o	After this regression stage, the problem was reframed as a multiclass classification task based on Q1–Q3 breakpoints
+
+4.	Modeling (Classification Stage):
+	
+o	Initially trained Random Forest and XGBoost classifiers before applying SMOTE or scaling
+
+o	Then applied SMOTE to balance class distribution
+
+o	Retrained models after SMOTE and scaling
+
+o	Best-performing classification model (Random Forest) was tested with and without geolocation features
+
+5.	Evaluation: Classification reports and confusion matrices
+	
+6.	LIME Explanation: Model interpretability using LIME was added to explain the classification decision for individual predictions.
+
+
