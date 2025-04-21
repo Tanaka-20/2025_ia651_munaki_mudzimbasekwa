@@ -95,23 +95,40 @@ o	Best-performing classification model (Random Forest) was tested with and witho
 -  Correlation Matrix:
 
 o	Revealed strong correlations between features, e.g., sqft_living and bathrooms, and sqft_above
+
 o	sqft_living had a strong positive correlation with price
+
 o	Weak or negative correlations were noted for condition and was_renovated
+
 o	The matrix was visualized with a heatmap for interpretability
-•	Boxplot Analysis:
+
+-	Boxplot Analysis:
+-	
 o	Revealed skewness and outliers in price
+
 o	Defined price class thresholds based on the full dataset:
+
 	Q1: $320,000
+
 	Median: $460,000
+
 	Q3: $659,125
+
 -  Features
 Selected from original dataset:
+
 •	bedrooms, bathrooms, sqft_living, floors, waterfront, view, condition, sqft_above, sqft_basement, effective_year, was_renovated
+
 •	Optional: latitude, longitude
+
 -  Target Variable
+-  
 •	price_class: Categorical (Low, Medium, High)
+
 o	Low: price ≤ Q1
+
 o	Medium: Q1 < price ≤ Q3
+
 o	High: price > Q3
 
 
