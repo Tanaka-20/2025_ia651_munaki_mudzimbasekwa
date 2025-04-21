@@ -12,9 +12,13 @@ Exploratory Data Analysis (EDA) included correlation matrix visualizations, boxp
 •	Source: Kaggle
 •	Observations: Thousands of house records from the US
 ##Features in the Dataset:
+
 •	price: Target variable representing sale price of the house
+
 •	bedrooms: Number of bedrooms
+
 •	bathrooms: Number of bathrooms
+
 •	sqft_living: Square footage of the interior living space
 •	sqft_lot: Square footage of the entire lot
 •	floors: Number of floors in the house
