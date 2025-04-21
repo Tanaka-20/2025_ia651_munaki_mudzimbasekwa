@@ -108,21 +108,20 @@ o	Revealed skewness and outliers in price
 
 o	Defined price class thresholds based on the full dataset:
 
-	Q1: $320,000
+Q1: $320,000
 
-	Median: $460,000
+Median: $460,000
 
-	Q3: $659,125
+Q3: $659,125
 
--  Features
-Selected from original dataset:
+ # Features Selected from original dataset:
 
 •	bedrooms, bathrooms, sqft_living, floors, waterfront, view, condition, sqft_above, sqft_basement, effective_year, was_renovated
 
 •	Optional: latitude, longitude
 
--  Target Variable
--  
+ #Target Variable
+  
 •	price_class: Categorical (Low, Medium, High)
 
 o	Low: price ≤ Q1
