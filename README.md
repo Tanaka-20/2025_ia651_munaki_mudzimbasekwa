@@ -140,6 +140,33 @@ o	High: price > Q3
 
 •	XGBoost Regressor
 
+## Performance Evaluation (Regression Stage):
+
+
+Model | RMSE ($) | R² | Notes
+Linear Regression (No Geo) | 242,812.08 | 0.4376 | Strong baseline
+Linear Regression (Geo) | 234,074.68 | 0.4774 | ⭐ Best RMSE & R² overall
+Random Forest (No Geo) | 268,214.81 | 0.3138 | Weak baseline
+Random Forest (Geo) | 236,860.32 | 0.4648 | Major boost from geolocation
+XGBoost (No Geo) | 242,812.08 | 0.4376 | Solid performance
+XGBoost (Geo) | 283,265.02 | 0.2346 | ❌ Performance dropped with geolocation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
