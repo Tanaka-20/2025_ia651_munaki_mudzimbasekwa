@@ -92,7 +92,7 @@ o	Best-performing classification model (Random Forest) was tested with and witho
 
    ## Exploratory Data Analysis (EDA)
    
--  Correlation Matrix:
+#  Correlation Matrix:
 
 o	Revealed strong correlations between features, e.g., sqft_living and bathrooms, and sqft_above
 
@@ -102,8 +102,8 @@ o	Weak or negative correlations were noted for condition and was_renovated
 
 o	The matrix was visualized with a heatmap for interpretability
 
--	Boxplot Analysis:
--	
+# Boxplot Analysis:
+	
 o	Revealed skewness and outliers in price
 
 o	Defined price class thresholds based on the full dataset:
