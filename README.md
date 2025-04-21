@@ -181,14 +181,22 @@ o	High: price > Q3
 
 ## Performance (Before SMOTE or Scaling):
 
+•	Random Forest: Accuracy ≈ 77%
+
+![WhatsApp Image 2025-04-21 at 14 45 50_d41bad34](https://github.com/user-attachments/assets/939344b4-03bb-4c2c-98df-2b4b58a21002)
+
 ![WhatsApp Image 2025-04-21 at 14 33 51_8dc1b478](https://github.com/user-attachments/assets/723a364a-a93c-4b44-9bcc-e0f0e0e3affc)
 
-•	Random Forest: Accuracy ≈ 77%
+
+•	XGBoost: Accuracy ≈ 75%
+
+![WhatsApp Image 2025-04-21 at 14 42 51_302bd452](https://github.com/user-attachments/assets/2a384fb0-dc87-4b12-9392-cbd58dab8343)
 
 ![WhatsApp Image 2025-04-21 at 14 33 31_17807eea](https://github.com/user-attachments/assets/37848a92-a059-4a46-b351-f7379e181736)
 
 
-•	XGBoost: Accuracy ≈ 75%
+
+
 
 ## After SMOTE + Scaling:
 
@@ -205,7 +213,12 @@ o	High: price > Q3
 
 •	Without Geolocation: Accuracy ≈ 84%
 
+![WhatsApp Image 2025-04-21 at 14 39 53_1f4ead2c](https://github.com/user-attachments/assets/0ceeae0d-8c26-4b5a-8c6d-faf494d2baed)
+
+
 •	With Geolocation: Accuracy improved to ≈ 85%
+![WhatsApp Image 2025-04-21 at 14 39 53_b48cfbc6](https://github.com/user-attachments/assets/ec279ef0-5bdb-4081-84b8-d2bab9b835db)
+
 
 ##  Classification Metrics (With Geolocation, Best Model)
 
