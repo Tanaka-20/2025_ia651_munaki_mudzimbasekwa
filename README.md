@@ -91,7 +91,9 @@ o	Best-performing classification model (Random Forest) was tested with and witho
 6.	LIME Explanation: Model interpretability using LIME was added to explain the classification decision for individual predictions.
 
    ## Exploratory Data Analysis (EDA)
-•	Correlation Matrix:
+   
+-  Correlation Matrix:
+
 o	Revealed strong correlations between features, e.g., sqft_living and bathrooms, and sqft_above
 o	sqft_living had a strong positive correlation with price
 o	Weak or negative correlations were noted for condition and was_renovated
