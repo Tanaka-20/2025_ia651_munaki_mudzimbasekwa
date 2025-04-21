@@ -147,7 +147,68 @@ o	High: price > Q3
 
 
 
+## Why XGBoost with Geolocation Dropped:
+•	Raw coordinates (lat/lon) lacked spatial context
 
+•	Introduced noisy splits and weakened gradient signals
+
+•	No spatial clustering or derived features applied
+
+•	Overfitting may have occurred due to unstructured geolocation data
+
+
+
+
+## Classification Stage Models:
+•	Random Forest Classifier
+
+•	XGBoost Classifier
+
+## Performance (Before SMOTE or Scaling):
+
+•	Random Forest: Accuracy ≈ 77%
+
+•	XGBoost: Accuracy ≈ 75%
+
+## After SMOTE + Scaling:
+•	Models trained on balanced and normalized data
+
+•	Improved fairness across classes
+
+## Random Forest With and Without Geolocation:
+
+•	Without Geolocation: Accuracy ≈ 84%
+
+•	With Geolocation: Accuracy improved to ≈ 85%
+
+##  Classification Metrics (With Geolocation, Best Model)
+
+![classification_metrics_table](https://github.com/user-attachments/assets/c4114f57-b340-4f1d-91aa-4840186c8ba5)
+
+
+## Local Interpretability with LIME
+
+LIME (Local Interpretable Model-agnostic Explanations) was used to explain individual classification predictions made by the best-performing model (Random Forest).
+
+•	Example Row (index 100) was analyzed:
+
+o	Predicted Class: High
+
+o	Prediction Probabilities:
+
+High: 43.00%
+
+Medium: 36.00%
+
+Low: 21.00%
+
+•	The most influential features included:
+
+o	num__bathrooms, num__sqft_lot, num__sqft_basement, num__sqft_living, etc.
+
+•	LIME provided a clear visualization of which features contributed to pushing the prediction away from Low toward High or Medium.
+
+This helped validate that the model's decision-making aligns with expected housing characteristics.
 
 
 
