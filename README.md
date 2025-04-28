@@ -293,18 +293,37 @@ LIME provided a clear visualization of which features contributed to pushing the
 
 # CONCLUSION
 
-This project successfully demonstrated an end-to-end pipeline for predicting U.S. house price categories using both regression and classification approaches. Initially framed as a regression problem, Linear Regression with geolocation emerged as the best model in terms of RMSE and R². However, by reframing the task into a classification problem using quartile-based price categories (Low, Medium, High), we were able to provide more interpretable results and better model decision thresholds.
-
-Among classification models, Random Forest with SMOTE-balanced and geolocation-enriched data achieved the highest accuracy (≈85%), outperforming other models like XGBoost. Feature engineering played a crucial role — derived features like effective_year and was_renovated contributed to performance gains, while latitude and longitude helped inject spatial context.
-
-LIME visualizations further validated the trustworthiness of the model. For example:
-
-For Row 100, LIME showed that features like num__bathrooms and num__sqft_living drove the prediction toward the High category with 43% probability.
-
-For Row 700, the predicted class was Medium (40% probability), with influential features like num__sqft_lot, num__sqft_above, and num__bathrooms.
+This project successfully demonstrated an end-to-end pipeline for predicting U.S. house price categories using both regression and classification approaches. Initially framed as a regression problem, Linear Regression with geolocation emerged as the best model in terms of RMSE and R². However, by reframing the task into a classification problem using quartile-based price categories (Low, Medium, High), we were able to provide more interpretable results and better model decision thresholds. Among classification models, Random Forest with SMOTE-balanced and geolocation-enriched data achieved the highest accuracy (≈85%), outperforming other models like XGBoost. Feature engineering played a crucial role — derived features like effective_year and was_renovated contributed to performance gains, while latitude and longitude helped inject spatial context. LIME visualizations further validated the trustworthiness of the model. For example: For Row 100, LIME showed that features like num__bathrooms and num__sqft_living drove the prediction toward the High category with 43% probability. For Row 700, the predicted class was Medium (40% probability), with influential features like num__sqft_lot, num__sqft_above, and num__bathrooms.
 
 These visual explanations confirmed that the model relied on reasonable housing characteristics, aligning with domain knowledge in real estate.
 
+
+# LIMITATIONS
+
+. Geolocation Encoding: Latitude and longitude were used as raw inputs, lacking spatial clustering or regional grouping, which likely limited their full predictive potential.
+
+. Class Imbalance (Pre-SMOTE): The original dataset was skewed toward Medium-priced houses. While SMOTE helped, it may introduce synthetic noise and doesn’t guarantee better generalization on unseen data.
+
+. Lack of Temporal Features: The model doesn’t account for time-based changes in property value, such as market trends or inflation.
+
+. No External Validation: The models were validated only on a single dataset from Kaggle. Their generalizability to other cities, time periods, or economic conditions remains untested.
+
+. Dropped PCA Due to Low Variance: PCA was attempted for dimensionality reduction, but didn't significantly improve performance. This also means deeper dimensional interactions might have been missed.
+
+
+# FUTURE WORK
+
+Geospatial Feature Engineering: Apply clustering techniques (e.g., K-means on lat/lon) to derive neighborhood-level features or use shapefiles for ZIP-code-based aggregations.
+
+Temporal Modeling: Incorporate historical data trends or seasonal indicators (e.g., year sold, quarter) to improve long-term forecasting.
+
+Model Ensemble or Hybrid Approaches: Combine multiple classifiers using ensemble strategies like stacking or voting to further boost performance.
+
+Web Deployment or App Integration: Deploy the model in a user-facing dashboard where users can input property details and receive a predicted price class with visual explanations via LIME.
+
+Explainability Enhancements: Incorporate SHAP values for global interpretability to complement LIME’s local explanations.
+
+Cross-Region Testing: Validate the model on housing data from other U.S. states or countries to evaluate robustness and adaptability.
 
 
 
