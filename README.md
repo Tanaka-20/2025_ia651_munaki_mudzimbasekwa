@@ -291,6 +291,20 @@ num__bathrooms, num__sqft_lot, num__sqft_above, num__sqft_living, etc.
 
 LIME provided a clear visualization of which features contributed to pushing the prediction away from Low toward Medium or High.
 
+# CONCLUSION
+
+This project successfully demonstrated an end-to-end pipeline for predicting U.S. house price categories using both regression and classification approaches. Initially framed as a regression problem, Linear Regression with geolocation emerged as the best model in terms of RMSE and R². However, by reframing the task into a classification problem using quartile-based price categories (Low, Medium, High), we were able to provide more interpretable results and better model decision thresholds.
+
+Among classification models, Random Forest with SMOTE-balanced and geolocation-enriched data achieved the highest accuracy (≈85%), outperforming other models like XGBoost. Feature engineering played a crucial role — derived features like effective_year and was_renovated contributed to performance gains, while latitude and longitude helped inject spatial context.
+
+LIME visualizations further validated the trustworthiness of the model. For example:
+
+For Row 100, LIME showed that features like num__bathrooms and num__sqft_living drove the prediction toward the High category with 43% probability.
+
+For Row 700, the predicted class was Medium (40% probability), with influential features like num__sqft_lot, num__sqft_above, and num__bathrooms.
+
+These visual explanations confirmed that the model relied on reasonable housing characteristics, aligning with domain knowledge in real estate.
+
 
 
 
