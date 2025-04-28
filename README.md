@@ -269,7 +269,27 @@ o	num__bathrooms, num__sqft_lot, num__sqft_basement, num__sqft_living, etc.
 
 This helped validate that the model's decision-making aligns with expected housing characteristics.
 
+## Medium
 
+![WhatsApp Image 2025-04-28 at 11 31 50_db200aec](https://github.com/user-attachments/assets/ee1a6227-c6a8-4a9d-b155-6f847f9c97c6)
+
+. Example Row (index 700) was analyzed:
+
+. Predicted Class: Medium
+
+. Prediction Probabilities:
+
+. High: 34.00%
+
+. Medium: 40.00%
+
+. Low: 26.00%
+
+. The most influential features included:
+
+num__bathrooms, num__sqft_lot, num__sqft_above, num__sqft_living, etc.
+
+LIME provided a clear visualization of which features contributed to pushing the prediction away from Low toward Medium or High.
 
 
 
