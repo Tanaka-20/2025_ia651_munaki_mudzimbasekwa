@@ -229,6 +229,11 @@ o	High: price > Q3
 ![WhatsApp Image 2025-04-21 at 14 39 53_b48cfbc6](https://github.com/user-attachments/assets/ec279ef0-5bdb-4081-84b8-d2bab9b835db)
 
 
+## Random Forest Feature Importance
+
+![WhatsApp Image 2025-04-28 at 10 35 40_b9e283f9](https://github.com/user-attachments/assets/959fae78-d50b-47a4-a170-6a6d4fea7721)
+
+
 
 
 
