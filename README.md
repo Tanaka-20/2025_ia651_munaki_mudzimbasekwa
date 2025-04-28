@@ -49,6 +49,8 @@ Exploratory Data Analysis (EDA) included correlation matrix visualizations, boxp
 
 Engineered features like effective_year and was_renovated were included to improve the predictive power and interpretability of renovation data. Geolocation features (latitude and longitude) were evaluated separately to assess spatial influence on pricing.
 
+## Washington State Map (Snippet of a Dataset)
+
 ![image](https://github.com/user-attachments/assets/c1efdfea-9d29-4615-9e91-f3ffac5f3063)
 
 In the heatmap, the color and intensity of the dots usually indicate house price concentrations:
