@@ -165,7 +165,8 @@ o	High: price > Q3
 ## Performance Evaluation (Regression Stage):
 
 
-![model_performance_table](https://github.com/user-attachments/assets/d540de54-ca2f-4df0-bf04-91c241b703b8)
+![performance_evaluation_table_notes_fixed](https://github.com/user-attachments/assets/b0737b75-c38c-4b6e-aaa1-dd88a4e53cd3)
+
 
 
 
